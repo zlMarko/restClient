@@ -1,0 +1,33 @@
+﻿<mah:MetroWindow x:Class="AeronauticaCliente.VentanaPiloto"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 WindowStartupLocation="CenterScreen"
+                 mc:Ignorable="d"
+                 BorderThickness="0"
+                 GlowBrush="RED"
+                 ResizeMode="NoResize"
+        Title="Aeronautica-Piloto" Height="450" Width="800" Background="#FF078BA8">
+    <Grid>
+        <mah:Tile HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="198" Height="421"/>
+        <Button Content="Consultar horas de vuelo" HorizontalAlignment="Left" Background="#CC0078D7" Margin="549,53,0,0" VerticalAlignment="Top" Width="173" Height="35" Click="Consulta_Horas_Vuelo"/>
+        <Button Content="" Style="{DynamicResource MahApps.Styles.Button.Circle}" HorizontalAlignment="Left" Margin="54,19,0,0" VerticalAlignment="Top" Width="81" Height="81" BorderBrush="#FF078BA8">
+            <Button.Background>
+                <ImageBrush ImageSource="kisspng-airplane-collins-english-dictionary-aircraft-05061-pilot-5abf207a943d78.2406468515224751306072.jpg" TileMode="Tile" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <mah:Tile x:Name="NombrePiloto" Content="" HorizontalAlignment="Left" Margin="54,125,0,0" VerticalAlignment="Top" Width="81" Height="15"/>
+        <mah:Tile x:Name="ApellidoPiloto" Content="" HorizontalAlignment="Left" Margin="54,145,0,0" VerticalAlignment="Top" Width="81" Height="15"/>
+        <mah:Tile x:Name="HoraVueloA" Content="" HorizontalAlignment="Left" Margin="325,35,0,0" VerticalAlignment="Top" Width="155" Height="25"/>
+        <mah:Tile x:Name="HoraVueloE" Content="" HorizontalAlignment="Left" Margin="325,75,0,0" VerticalAlignment="Top" Width="155" Height="25"/>
+        <Label Content="H/ Aeronave" HorizontalAlignment="Left" Margin="227,34,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.289,0.615"/>
+        <Label Content="H/ Helicóptero" HorizontalAlignment="Left" Margin="227,74,0,0" VerticalAlignment="Top" Width="93" RenderTransformOrigin="0.289,0.615"/>
+        <Button Content="Consultar Aeronaves disponibles" HorizontalAlignment="Left" Background="#CC0078D7" Margin="241,353,0,0" VerticalAlignment="Top" Width="201" Height="35" Click="Consulta_Aeronaves_Disponibles" />
+        <DataGrid x:Name="GridAeronaves" HorizontalAlignment="Left" Height="203"   Margin="227,145,0,0" VerticalAlignment="Top" Width="523" Background="#FF078BA8"/>
+        <Button x:Name="Registra_vuelo_boton" Content="Registrar un vuelo" HorizontalAlignment="Left" Background="#CC0078D7" Margin="10,313,0,0" VerticalAlignment="Top" Width="173" Height="35" Click="Registra_vuelo" />
+        <Button Content="Cerrar sesión" HorizontalAlignment="Left" Background="#CC0078D7" Margin="630,353,0,0" VerticalAlignment="Top" Width="120" Height="35" Click="Button_Click" />
+    </Grid>
+</mah:MetroWindow>
